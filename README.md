@@ -2,6 +2,8 @@
 
 A professional, multi-file portfolio website built with vanilla HTML, CSS, and JavaScript.
 
+🌐 **Live Site:** [abhishekbogam.github.io/abhishek-portfolio](https://abhishekbogam.github.io/abhishek-portfolio/)
+
 ---
 
 ## 📁 File Structure
@@ -67,7 +69,7 @@ portfolio/
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
 **Option 1 — VS Code Live Server (Recommended)**
 1. Open the `portfolio/` folder in VS Code
@@ -93,7 +95,7 @@ npx serve .
 
 ## 🏅 Adding a New Certificate
 
-No HTML editing required. Just 3 steps:
+No HTML editing required. Just 2 steps:
 
 **Step 1** — Drop the PDF into `assets/certificates/`
 
@@ -106,13 +108,6 @@ No HTML editing required. Just 3 steps:
   "icon": "🏆",
   "file": "assets/certificates/your-cert-file.pdf"
 }
-```
-
-**Step 3** — Push to GitHub:
-```bash
-git add .
-git commit -m "add: new certificate"
-git push
 ```
 
 The card will automatically appear on the site. ✅
@@ -140,23 +135,6 @@ The card will automatically appear on the site. ✅
 
 ---
 
-## 🚢 Deploying to GitHub Pages
-
-```bash
-git init
-git remote add origin https://github.com/Abhishekbogam/abhishek-portfolio.git
-git pull origin main --allow-unrelated-histories
-git add .
-git commit -m "update portfolio"
-git push -u origin main
-```
-
-Live at: **https://abhishekbogam.github.io/abhishek-portfolio/**
-
-> GitHub Pages takes 1–2 minutes to reflect changes after each push.
-
----
-
 ## 🎨 Customization
 
 - **Colors:** Edit CSS variables in `css/global.css` under `:root {}`
@@ -176,7 +154,7 @@ Live at: **https://abhishekbogam.github.io/abhishek-portfolio/**
 - ✅ Counter animations for stats
 - ✅ Responsive / mobile-friendly
 - ✅ Resume modal with in-page viewer + direct download
-- ✅ Certificate modal viewer (no download — view only)
+- ✅ Certificate modal viewer (view only)
 - ✅ JSON-driven certificate cards (add certs without touching HTML)
 - ✅ Custom smooth scrollbar
 - ✅ Ripple effect on buttons
