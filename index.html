@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bogam Abhishek — Gen AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/achievements.css" />
+  <link rel="stylesheet" href="css/certifications.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  <nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <span class="nav-logo-first">Bogam</span>
+    <span class="nav-logo-last">&nbsp;Abhishek</span>
+    <span class="nav-logo-dot"></span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button class="nav-resume-btn" id="navResumeBtn">📄 Resume</button>
+    <a href="#contact" class="nav-cta">Let's Connect →</a>
+  </div>
+
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Awards</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+  <button class="nav-resume-btn" id="navResumeBtnMobile">📄 Resume</button>
+  <a href="#contact" class="nav-cta btn btn-primary">Let's Connect →</a>
+</div>
+
+  <main>
+    <section id="hero"><div class="hero-container">
+
+  <!-- LEFT: Text Content -->
+  <div class="hero-content">
+    <div class="hero-greeting">Available for opportunities</div>
+
+    <p class="hero-hi">Hi, I am</p>
+
+    <h1 class="hero-name">
+      <span class="hero-name-first">Bogam</span>
+      <span class="hero-name-last">Abhishek</span>
+    </h1>
+
+    <div class="hero-role-wrap">
+      <span class="hero-role-badge" id="heroTyped">Gen AI Engineer</span>
+      <span class="hero-role-at">at</span>
+      <span class="hero-role-company"><span>Tech Mahindra</span></span>
+    </div>
+
+    <p class="hero-desc">
+      Building next-generation Agentic AI systems — from multi-agent RAG pipelines
+      to enterprise LLM orchestration — that solve real-world problems at scale.
+      Passionate about making AI work smarter, not harder.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span>View My Work</span>
+        <span>→</span>
+      </a>
+      <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      <a href="https://github.com/Abhishekbogam" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      <!-- <a href="https://medium.com/@bogamabhishek27" target="_blank" class="btn btn-ghost">Medium ↗</a> -->
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="2" data-suffix="+">2+</span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="7" data-suffix="+">7+</span>
+        <span class="hero-stat-label">Certifications</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="45" data-suffix="%">45%</span>
+        <span class="hero-stat-label">Effort Reduction</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="3">3</span>
+        <span class="hero-stat-label">Major Projects</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Photo -->
+  <div class="hero-photo-wrap">
+    <!-- Floating info badges -->
+    <div class="hero-badge-float bf1">
+      <span class="bf-icon">🧠</span>
+      <span>Agentic AI</span>
+    </div>
+    <div class="hero-badge-float bf2">
+      <span class="bf-icon">🏆</span>
+      <span>Top Performer</span>
+    </div>
+    <div class="hero-badge-float bf3">
+      <span class="bf-icon">☁️</span>
+      <span>Azure Certified</span>
+    </div>
+
+    <div class="hero-photo-frame">
+      <img
+        id="heroPhoto"
+        src="assets/images/abhishek.jpg"
+        alt="Bogam Abhishek"
+        style="width:100%;height:100%;object-fit:cover;display:block;"
+        onerror="
+          this.onerror=null;
+          const tries = ['assets/images/abhishek.png','assets/images/abhishek.jpeg','assets/images/abhishek.webp','./assets/images/abhishek.jpg','./assets/images/abhishek.png'];
+          const idx = parseInt(this.dataset.try||0);
+          if(idx < tries.length){ this.dataset.try=idx+1; this.src=tries[idx]; }
+          else { this.style.display='none'; document.getElementById('heroAvatarFallback').style.display='flex'; }
+        "
+      />
+      <div id="heroAvatarFallback" class="hero-avatar-placeholder" style="display:none;">
+        <span class="hero-avatar-initials">BA</span>
+        <span class="hero-avatar-sub">Bogam Abhishek</span>
+      </div>
+    </div>
+
+    <!-- Mobile badge row (shown only on mobile, hidden on desktop) -->
+    <div class="hero-mobile-badges">
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">🧠</span>
+        <span>Agentic AI</span>
+      </div>
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">🏆</span>
+        <span>Top Performer</span>
+      </div>
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">☁️</span>
+        <span>Azure Certified</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Scroll hint -->
+<div class="hero-scroll-hint">
+  <div class="scroll-mouse"></div>
+  <span>Scroll down</span>
+</div>
+
+<script>
+  // Debug: tells you in console if image loaded or failed
+  document.addEventListener('DOMContentLoaded', function() {
+    var img = document.getElementById('heroPhoto');
+    if (img) {
+      img.addEventListener('load', function() {
+        console.log('%c✅ Photo loaded from: ' + img.src, 'color:green;font-weight:bold');
+      });
+      // Check if already loaded (cached)
+      if (img.complete && img.naturalWidth > 0) {
+        console.log('%c✅ Photo already loaded: ' + img.src, 'color:green;font-weight:bold');
+        img.style.display = 'block';
+        document.getElementById('heroAvatarFallback').style.display = 'none';
+      }
+    }
+  });
+</script>
+</section>
+    <section id="about"><div class="container">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <!-- Left -->
+      <div class="about-left reveal-left">
+        <div class="section-eyebrow">01 · About Me</div>
+        <h2 class="section-title">The Engineer <span>Behind the AI</span></h2>
+
+        <p class="about-text">
+          Hey! I'm <strong>Bogam Abhishek</strong>, an Associate Software Engineer at
+          <strong>Tech Mahindra</strong>, where I work as a <strong>Gen AI Engineer</strong>
+          building next-generation agentic AI systems that drive real enterprise impact.
+        </p>
+        <p class="about-text">
+          My focus is on <strong>LLM orchestration, Agentic RAG architectures,</strong> and
+          <strong>multi-agent systems</strong> — intelligent pipelines that don't just retrieve
+          information, but reason, plan, and act on it.
+        </p>
+        <p class="about-text">
+          I've delivered systems reducing manual effort by <strong>45%</strong>, cutting API costs
+          by <strong>25%</strong>, and improving query accuracy by <strong>30%</strong> — all in
+          production telecom environments.
+        </p>
+
+        <ul class="about-list">
+          <li>📍 Andhra Pradesh, India</li>
+          <li>💼 Associate Software Engineer @ Tech Mahindra</li>
+          <li>🎓 B.Tech CS — MITS (GPA: 8.42/10)</li>
+          <li>📧 <a href="mailto:bogamabhishek27@gmail.com" class="email-link">bogamabhishek27@gmail.com</a></li>
+          <!-- <li>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="04666b63656965666c6d776c616f3633446369656d682a676b69">[email&#160;protected]</a></li> -->
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+      </div>
+
+      <!-- Right: cards -->
+      <div class="about-cards">
+        <div class="about-card reveal" data-delay="0">
+          <div class="about-card-icon">🧠</div>
+          <h4>Agentic AI</h4>
+          <p>Multi-agent RAG with planning, reasoning, and sub-query decomposition.</p>
+        </div>
+        <div class="about-card reveal" data-delay="100">
+          <div class="about-card-icon">⚡</div>
+          <h4>LLM Infra</h4>
+          <p>On-prem & hybrid deployment using vLLM, OpenVINO, Groq and HuggingFace.</p>
+        </div>
+        <div class="about-card reveal" data-delay="200">
+          <div class="about-card-icon">🏆</div>
+          <h4>Award Winning</h4>
+          <p>3rd place @ Microsoft × TechM Ideathon. Awarded @ Microsoft Agentic AI Hackathon.</p>
+        </div>
+        <div class="about-card reveal" data-delay="300">
+          <div class="about-card-icon">☁️</div>
+          <h4>Cloud Native</h4>
+          <p>Azure-certified. Deployed production AI systems on Azure in rapid 4-day cycles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="experience"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">02 · Experience</div>
+    <h2 class="section-title reveal">Where I've <span>Made Impact</span></h2>
+    <p class="section-subtitle reveal">Production-grade AI systems for real enterprise challenges.</p>
+
+    <div class="exp-timeline">
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <span class="exp-company">Tech Mahindra ASD</span>
+          <span class="exp-date">March 2024 – Present</span>
+        </div>
+        <div class="exp-role">Associate Software Engineer · Gen AI Engineer</div>
+
+        <hr class="exp-divider" />
+
+        <ul class="exp-list">
+          <li>
+            <span class="exp-arrow">→</span>
+            <span>Developed and deployed an <strong>Agentic RAG system</strong> for automated 4G/5G (3GPP) test case generation, reducing manual effort by <strong>45%</strong>.</span>
+          </li>
+          <li>
+            <span class="exp-arrow">→</span>
+            <span>Designed <strong>multi-step reasoning workflows</strong> using planning-based task decomposition, improving complex telecom query accuracy by <strong>30%</strong>.</span>
+          </li>
+          <li>
+            <span class="exp-arrow">→</span>
+            <span>Implemented <strong>domain-specific embedding segmentation</strong> (AMF, SMF, Core Network) with intelligent retrieval routing, reducing latency by <strong>35%</strong> and improving semantic relevance.</span>
+          </li>
+          <li>
+            <span class="exp-arrow">→</span>
+            <span>Engineered a scalable <strong>Flask backend</strong> integrating on-prem LLM inference (vLLM, OpenVINO) and hybrid API models (Hugging Face, Groq), enabling multi-model orchestration and concurrent inference.</span>
+          </li>
+          <li>
+            <span class="exp-arrow">→</span>
+            <span>Optimized modular <strong>RAG pipelines</strong> for enterprise deployment, reducing token consumption and API cost by <strong>25%</strong>.</span>
+          </li>
+        </ul>
+
+        <!-- Metrics row -->
+        <div class="exp-metrics">
+          <div class="exp-metric">
+            <span class="exp-metric-val" data-count="45" data-suffix="%">45%</span>
+            <span class="exp-metric-label">Effort Saved</span>
+          </div>
+          <div class="exp-metric">
+            <span class="exp-metric-val" data-count="30" data-suffix="%">30%</span>
+            <span class="exp-metric-label">Query Accuracy</span>
+          </div>
+          <div class="exp-metric">
+            <span class="exp-metric-val" data-count="35" data-suffix="%">35%</span>
+            <span class="exp-metric-label">Latency Reduced</span>
+          </div>
+          <div class="exp-metric">
+            <span class="exp-metric-val" data-count="25" data-suffix="%">25%</span>
+            <span class="exp-metric-label">Cost Reduction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="skills"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">03 · Skills</div>
+    <h2 class="section-title reveal">Tools of <span>the Trade</span></h2>
+    <p class="section-subtitle reveal">Technologies I use to build intelligent, production-grade AI systems.</p>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal" data-delay="0">
+        <div class="skill-group-icon">💻</div>
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" data-delay="80">
+        <div class="skill-group-icon">🔧</div>
+        <div class="skill-group-title">Frameworks & Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" data-delay="160">
+        <div class="skill-group-icon">🤖</div>
+        <div class="skill-group-title">AI / LLM Frameworks</div>
+        <div class="skill-tags">
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">LangGraph</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">Multi-Agent</span>
+          <span class="skill-tag">MCP</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" data-delay="240">
+        <div class="skill-group-icon">🗄️</div>
+        <div class="skill-group-title">Vector Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">FAISS</span>
+          <span class="skill-tag">Azure AI Search</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" data-delay="320">
+        <div class="skill-group-icon">⚡</div>
+        <div class="skill-group-title">LLM Inference & APIs</div>
+        <div class="skill-tags">
+          <span class="skill-tag">vLLM</span>
+          <span class="skill-tag">OpenVINO</span>
+          <span class="skill-tag">Groq</span>
+          <span class="skill-tag">Google API</span>
+          <span class="skill-tag">HuggingFace</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" data-delay="400">
+        <div class="skill-group-icon">🛠️</div>
+        <div class="skill-group-title">Tools & Design</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Adobe PS</span>
+          <span class="skill-tag">Azure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="projects"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">04 · Projects</div>
+    <h2 class="section-title reveal">Things I've <span>Built</span></h2>
+    <p class="section-subtitle reveal">Production-ready AI systems tackling real-world enterprise challenges.</p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal" data-delay="0">
+        <div class="project-number">01</div>
+        <div class="project-badges">
+          <span class="badge badge-blue">RAG</span>
+          <span class="badge badge-teal">Production</span>
+        </div>
+        <div class="project-title">TrustRAG</div>
+        <p class="project-desc">
+          A source-aware, memory-enabled RAG system built with FastAPI, FAISS, and LLaMA-3
+          via Groq for grounded responses on large technical documents. Retrieval-first
+          architecture with domain-aware controls to enhance accuracy and minimize hallucinations.
+        </p>
+        <div class="project-stack">
+          <span class="project-tech">FastAPI</span>
+          <span class="project-tech">FAISS</span>
+          <span class="project-tech">LLaMA-3</span>
+          <span class="project-tech">Groq</span>
+          <span class="project-tech">Python</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal" data-delay="120">
+        <div class="project-number">02</div>
+        <div class="project-badges">
+          <span class="badge badge-blue">AI</span>
+          <span class="badge badge-purple">Azure</span>
+          <span class="badge badge-teal">FinTech</span>
+        </div>
+        <div class="project-title">AI Financial Credibility Analyser</div>
+        <p class="project-desc">
+          Production-ready AI system for automated KYC validation and financial risk assessment
+          using Flask, Azure Blob Storage, and Azure AI Document Intelligence. Integrated hybrid
+          vector retrieval with Azure AI Search and Azure OpenAI to generate structured PDF
+          credibility reports — deployed on Azure in just 4 days.
+        </p>
+        <div class="project-stack">
+          <span class="project-tech">Flask</span>
+          <span class="project-tech">Azure Blob</span>
+          <span class="project-tech">Azure OpenAI</span>
+          <span class="project-tech">Azure AI Search</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal" data-delay="240">
+        <div class="project-number">03</div>
+        <div class="project-badges">
+          <span class="badge badge-purple">Multi-Agent</span>
+          <span class="badge badge-blue">Architecture</span>
+        </div>
+        <div class="project-title">AgenticRAG Orchestrator</div>
+        <p class="project-desc">
+          Multi-agent RAG system with clustered topic-based embedding generation, Sub-Query
+          Decomposition Agent, and intelligent retrieval routing for improved semantic precision
+          and multi-hop reasoning across complex, distributed knowledge bases.
+        </p>
+        <div class="project-stack">
+          <span class="project-tech">LangGraph</span>
+          <span class="project-tech">LangChain</span>
+          <span class="project-tech">Multi-Agent</span>
+          <span class="project-tech">FAISS</span>
+          <span class="project-tech">Python</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+    <section id="achievements"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">05 · Awards</div>
+    <h2 class="section-title reveal">Recognition & <span>Achievements</span></h2>
+    <p class="section-subtitle reveal">Honored for technical excellence and innovative AI delivery.</p>
+
+    <div class="achievements-grid">
+      <div class="achievement-card reveal" data-delay="0">
+        <div class="achievement-icon-wrap">⭐</div>
+        <div class="achievement-body">
+          <h4>Top Performance Rating — Two Consecutive Years</h4>
+          <p>Received Top Performance rating for two consecutive years at Tech Mahindra for outstanding technical delivery in Gen AI engineering.</p>
+        </div>
+      </div>
+      <div class="achievement-card reveal" data-delay="100">
+        <div class="achievement-icon-wrap">🥉</div>
+        <div class="achievement-body">
+          <h4>3rd Place — Microsoft × Tech Mahindra Ideathon</h4>
+          <p>Secured 3rd place among 80+ teams for presenting an Agentic RAG model demonstrating real-world enterprise applicability.</p>
+        </div>
+      </div>
+      <div class="achievement-card reveal" data-delay="200">
+        <div class="achievement-icon-wrap">🏆</div>
+        <div class="achievement-body">
+          <h4>Microsoft Agentic AI Hackathon Award</h4>
+          <p>Awarded at the Microsoft Agentic AI Hackathon for developing a multi-agent solution using the AutoGen framework.</p>
+        </div>
+      </div>
+      <div class="achievement-card reveal" data-delay="300">
+        <div class="achievement-icon-wrap">🎖️</div>
+        <div class="achievement-body">
+          <h4>Pat on Back Award — Tech Mahindra</h4>
+          <p>Recognized for exceptional contributions and going above and beyond the scope of assigned technical deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="certifications"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">06 · Certifications</div>
+    <h2 class="section-title reveal">Certified <span>Expertise</span></h2>
+    <p class="section-subtitle reveal">Industry-recognized credentials across cloud, AI, and development.</p>
+
+    <div class="certs-grid" id="certsGrid">
+      <!-- Auto-rendered from data/certificates.json -->
+    </div>
+  </div>
+</div>
+
+<!-- Certificate Modal Popup -->
+<div class="cert-modal-overlay" id="certModal">
+  <div class="cert-modal">
+    <div class="cert-modal-header">
+      <div>
+        <div class="cert-modal-issuer" id="certModalIssuer"></div>
+        <div class="cert-modal-title" id="certModalTitle"></div>
+      </div>
+      <div class="cert-modal-actions">
+        <button class="cert-modal-close" id="certModalClose">✕</button>
+      </div>
+    </div>
+    <div class="cert-modal-body">
+      <iframe id="certModalFrame" src="" frameborder="0"></iframe>
+      <div class="cert-modal-imgwrap" id="certModalImgWrap" style="display:none;">
+        <img id="certModalImg" src="" alt="Certificate" />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="education"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">07 · Education</div>
+    <h2 class="section-title reveal">Academic <span>Foundation</span></h2>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal" data-delay="0">
+        <div class="edu-year">B.Tech · May 2023</div>
+        <div class="edu-degree">Computer Science Engineering</div>
+        <div class="edu-institution">Madanapalle Institute of Technology & Science<br>Andhra Pradesh, India</div>
+        <span class="edu-gpa">⭐ GPA: 8.42 / 10.0</span>
+      </div>
+      <div class="edu-card reveal" data-delay="120">
+        <div class="edu-year">Intermediate · May 2019</div>
+        <div class="edu-degree">Intermediate Education (MPC)</div>
+        <div class="edu-institution">Bharathi Junior College<br>Andhra Pradesh, India</div>
+        <span class="edu-gpa">⭐ GPA: 8.03 / 10.0</span>
+      </div>
+      <div class="edu-card reveal" data-delay="240">
+        <div class="edu-year">SSC · May 2017</div>
+        <div class="edu-degree">Secondary School Certificate</div>
+        <div class="edu-institution">Ravindra Bharathi School<br>Andhra Pradesh, India</div>
+        <span class="edu-gpa">⭐ GPA: 8.3 / 10.0</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section id="contact"><div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">08 · Contact</div>
+    <h2 class="section-title reveal">Let's Build <span>Something Great</span></h2>
+
+    <div class="contact-grid">
+
+      <!-- Left Info -->
+      <div class="reveal-left">
+        <p class="contact-intro-text">
+          I'm open to exciting Gen AI opportunities, collaborations, and conversations
+          about agentic systems, LLM architectures, or anything at the frontier of AI.
+          Don't hesitate to reach out — I'd love to connect.
+        </p>
+
+        <div class="contact-info-list">
+          <a href="mailto:bogamabhishek27@gmail.com" class="contact-info-item">
+            <div class="cii-icon">✉️</div>
+            <div>
+              <span class="cii-label">Email</span>
+              <span class = "cii-value">bogamabhishek27@gmail.com</span>
+              <!-- <span class="cii-value"><span class="__cf_email__" data-cfemail="24464b43454945464c4d574c414f1613644349454d480a474b49">[email&#160;protected]</span></span> -->
+            </div>
+          </a>
+          <a href="tel:+918310454704" class="contact-info-item">
+            <div class="cii-icon">📱</div>
+            <div>
+              <span class="cii-label">Phone</span>
+              <span class="cii-value">+91 83104 54704</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/bogamabhishek" target="_blank" class="contact-info-item">
+            <div class="cii-icon">💼</div>
+            <div>
+              <span class="cii-label">LinkedIn</span>
+              <span class="cii-value">bogamabhishek</span>
+            </div>
+          </a>
+          <a href="https://github.com/Abhishekbogam" target="_blank" class="contact-info-item">
+            <div class="cii-icon">🐙</div>
+            <div>
+              <span class="cii-label">GitHub</span>
+              <span class="cii-value">Abhishekbogam</span>
+            </div>
+          </a>
+          <a href="https://medium.com/@bogamabhishek27" target="_blank" class="contact-info-item">
+            <div class="cii-icon">✍️</div>
+            <div>
+              <span class="cii-label">Medium</span>
+              <span class="cii-value">@bogamabhishek27</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="reveal-right">
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <p class="contact-form-sub">I typically respond within 24 hours.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="formName">Your Name *</label>
+                <input class="form-input" type="text" id="formName" placeholder="Ravi Kumar" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="formEmail">Email Address *</label>
+                <input class="form-input" type="email" id="formEmail" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formSubject">Subject</label>
+              <input class="form-input" type="text" id="formSubject" placeholder="Collaboration / Opportunity / Hello" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formMessage">Message *</label>
+              <textarea class="form-textarea" id="formMessage" placeholder="Hey Abhishek, I'd love to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+          </form>
+
+          <div class="form-feedback" id="formFeedback">
+            ✓ Great! Opening your email client to send the message.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+  </main>
+  <footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">
+        Bogam <span>Abhishek</span>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/bogamabhishek" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://github.com/Abhishekbogam" target="_blank" title="GitHub">🐙</a>
+        <a href="https://medium.com/@bogamabhishek27" target="_blank" title="Medium">✍️</a>
+        <a href="mailto:bogamabhishek27@gmail.com" title="Email">✉️</a>
+        <!-- <a href="/cdn-cgi/l/email-protection#c7a5a8a0a6aaa6a5afaeb4afa2acf5f087a0aaa6aeabe9a4a8aa" title="Email">✉️</a> -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">© <span id="footerYear">2025</span> Bogam Abhishek. All rights reserved.</span>
+      <span class="footer-tagline">Gen AI Engineer · Tech Mahindra · Andhra Pradesh, India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Resume Modal -->
+<div class="resume-modal-overlay" id="resumeModal">
+  <div class="resume-modal">
+    <div class="resume-modal-header">
+      <div>
+        <div class="resume-modal-label">Bogam Abhishek</div>
+        <div class="resume-modal-title">Resume / CV</div>
+      </div>
+      <div class="resume-modal-actions">
+        <button class="resume-modal-download" id="resumeModalDownload">⬇ Download</button>
+        <button class="resume-modal-close" id="resumeModalClose">✕</button>
+      </div>
+    </div>
+    <div class="resume-modal-body">
+      <iframe id="resumeModalFrame" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/certificates.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.dispatchEvent(new Event('sectionsLoaded'));</script>
+</body>
+</html>

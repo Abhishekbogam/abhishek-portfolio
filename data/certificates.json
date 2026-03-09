@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Azure AI Fundamentals",
+    "issuer": "Microsoft",
+    "icon": "🔷",
+    "file": "assets/certificates/azure-ai-fundamentals.pdf"
+  },
+  {
+    "title": "GitHub Copilot",
+    "issuer": "Microsoft",
+    "icon": "🐙",
+    "file": "assets/certificates/github-copilot.pdf"
+  },
+  {
+    "title": "Gen AI & GCP — AI White Belt",
+    "issuer": "Google",
+    "icon": "🌐",
+    "file": "assets/certificates/google-genai.pdf"
+  },
+  {
+    "title": "Generative AI Professional",
+    "issuer": "Oracle OCI",
+    "icon": "☁️",
+    "file": "assets/certificates/oracle-genai.pdf"
+  },
+  {
+    "title": "AI Vector Search Professional",
+    "issuer": "Oracle OCI",
+    "icon": "🔍",
+    "file": "assets/certificates/oracle-vector.pdf"
+  },
+  {
+    "title": "Intern Ignite Program",
+    "issuer": "LTIMindtree",
+    "icon": "🚀",
+    "file": "assets/certificates/ltimindtree.pdf"
+  },
+  {
+    "title": "ReCogNurize 2.0 — Nurture Tek Knight",
+    "issuer": "Cognizant",
+    "icon": "⚔️",
+    "file": "assets/certificates/cognizant.pdf"
+  }
+]

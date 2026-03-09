@@ -1,0 +1,161 @@
+/* ============================================
+   ACHIEVEMENTS.CSS
+   ============================================ */
+
+#achievements { background: var(--surface); }
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.achievement-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.32s var(--ease);
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(26,107,204,0.2);
+}
+
+.achievement-icon-wrap {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: var(--grad-hero);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(26,107,204,0.10);
+}
+
+.achievement-body h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+.achievement-body p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 700px) {
+  .achievements-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- ACHIEVEMENTS CERTIFICATES SUB-SECTION ---- */
+
+.achieve-cert-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.achieve-cert-heading span {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.achieve-certs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.achieve-cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 26px 20px 22px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.32s var(--ease);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.achieve-cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--grad-hero);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.achieve-cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(26,107,204,0.20);
+}
+.achieve-cert-card:hover::before { opacity: 1; }
+.achieve-cert-card:hover .achieve-cert-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.achieve-cert-logo {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+.achieve-cert-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+.achieve-cert-name {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+.achieve-cert-view {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.25s var(--ease);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .achieve-certs-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .achieve-certs-grid { grid-template-columns: repeat(2, 1fr); }
+}

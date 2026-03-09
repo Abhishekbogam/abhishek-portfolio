@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">06 · Certifications</div>
+    <h2 class="section-title reveal">Certified <span>Expertise</span></h2>
+    <p class="section-subtitle reveal">Industry-recognized credentials across cloud, AI, and development.</p>
+
+    <div class="certs-grid">
+      <div class="cert-card reveal" data-delay="0" data-cert="assets/certificates/azure-ai-fundamentals.pdf" data-title="Azure AI Fundamentals" data-issuer="Microsoft">
+        <div class="cert-logo">🔷</div>
+        <div class="cert-issuer">Microsoft</div>
+        <div class="cert-name">Azure AI Fundamentals</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="70" data-cert="assets/certificates/github-copilot.pdf" data-title="GitHub Copilot" data-issuer="Microsoft">
+        <div class="cert-logo">🐙</div>
+        <div class="cert-issuer">Microsoft</div>
+        <div class="cert-name">GitHub Copilot</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="140" data-cert="assets/certificates/google-genai.pdf" data-title="Gen AI & GCP — AI White Belt" data-issuer="Google">
+        <div class="cert-logo">🌐</div>
+        <div class="cert-issuer">Google</div>
+        <div class="cert-name">Gen AI & GCP — AI White Belt</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="210" data-cert="assets/certificates/oracle-genai.pdf" data-title="Generative AI Professional" data-issuer="Oracle OCI">
+        <div class="cert-logo">☁️</div>
+        <div class="cert-issuer">Oracle OCI</div>
+        <div class="cert-name">Generative AI Professional</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="280" data-cert="assets/certificates/oracle-vector.pdf" data-title="AI Vector Search Professional" data-issuer="Oracle OCI">
+        <div class="cert-logo">🔍</div>
+        <div class="cert-issuer">Oracle OCI</div>
+        <div class="cert-name">AI Vector Search Professional</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="350" data-cert="assets/certificates/ltimindtree.pdf" data-title="Intern Ignite Program" data-issuer="LTIMindtree">
+        <div class="cert-logo">🚀</div>
+        <div class="cert-issuer">LTIMindtree</div>
+        <div class="cert-name">Intern Ignite Program</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+      <div class="cert-card reveal" data-delay="420" data-cert="assets/certificates/cognizant.pdf" data-title="ReCogNurize 2.0 — Nurture Tek Knight" data-issuer="Cognizant">
+        <div class="cert-logo">⚔️</div>
+        <div class="cert-issuer">Cognizant</div>
+        <div class="cert-name">ReCogNurize 2.0 — Nurture Tek Knight</div>
+        <div class="cert-view">View Certificate ↗</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certificate Modal Popup -->
+<div class="cert-modal-overlay" id="certModal">
+  <div class="cert-modal">
+    <div class="cert-modal-header">
+      <div>
+        <div class="cert-modal-issuer" id="certModalIssuer"></div>
+        <div class="cert-modal-title" id="certModalTitle"></div>
+      </div>
+      <div class="cert-modal-actions">
+        <a class="cert-modal-download" id="certModalDownload" download>⬇ Download</a>
+        <button class="cert-modal-close" id="certModalClose">✕</button>
+      </div>
+    </div>
+    <div class="cert-modal-body">
+      <iframe id="certModalFrame" src="" frameborder="0"></iframe>
+      <div class="cert-modal-imgwrap" id="certModalImgWrap" style="display:none;">
+        <img id="certModalImg" src="" alt="Certificate" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+<div class="hero-container">
+
+  <!-- LEFT: Text Content -->
+  <div class="hero-content">
+    <div class="hero-greeting">Available for opportunities</div>
+
+    <p class="hero-hi">Hi, I am</p>
+
+    <h1 class="hero-name">
+      <span class="hero-name-first">Bogam</span>
+      <span class="hero-name-last">Abhishek</span>
+    </h1>
+
+    <div class="hero-role-wrap">
+      <span class="hero-role-badge" id="heroTyped">Gen AI Engineer</span>
+      <span class="hero-role-at">at</span>
+      <span class="hero-role-company"><span>Tech Mahindra</span></span>
+    </div>
+
+    <p class="hero-desc">
+      Building next-generation Agentic AI systems — from multi-agent RAG pipelines
+      to enterprise LLM orchestration — that solve real-world problems at scale.
+      Passionate about making AI work smarter, not harder.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span>View My Work</span>
+        <span>→</span>
+      </a>
+      <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      <a href="https://github.com/Abhishekbogam" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="2" data-suffix="+">2+</span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="7" data-suffix="+">7+</span>
+        <span class="hero-stat-label">Certifications</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="45" data-suffix="%">45%</span>
+        <span class="hero-stat-label">Effort Reduction</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="3">3</span>
+        <span class="hero-stat-label">Major Projects</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Photo -->
+  <div class="hero-photo-wrap">
+    <!-- Floating info badges -->
+    <div class="hero-badge-float bf1">
+      <span class="bf-icon">🧠</span>
+      <span>Agentic AI</span>
+    </div>
+    <div class="hero-badge-float bf2">
+      <span class="bf-icon">🏆</span>
+      <span>Top Performer</span>
+    </div>
+    <div class="hero-badge-float bf3">
+      <span class="bf-icon">☁️</span>
+      <span>Azure Certified</span>
+    </div>
+
+    <div class="hero-photo-frame">
+      <img
+        id="heroPhoto"
+        src="assets/images/abhishek.jpg"
+        alt="Bogam Abhishek"
+        style="width:100%;height:100%;object-fit:cover;display:block;"
+        onerror="
+          this.onerror=null;
+          const tries = ['assets/images/abhishek.png','assets/images/abhishek.jpeg','assets/images/abhishek.webp','./assets/images/abhishek.jpg','./assets/images/abhishek.png'];
+          const idx = parseInt(this.dataset.try||0);
+          if(idx < tries.length){ this.dataset.try=idx+1; this.src=tries[idx]; }
+          else { this.style.display='none'; document.getElementById('heroAvatarFallback').style.display='flex'; }
+        "
+      />
+      <div id="heroAvatarFallback" class="hero-avatar-placeholder" style="display:none;">
+        <span class="hero-avatar-initials">BA</span>
+        <span class="hero-avatar-sub">Bogam Abhishek</span>
+      </div>
+    </div>
+
+    <!-- Mobile badge row (shown only on mobile, hidden on desktop) -->
+    <div class="hero-mobile-badges">
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">🧠</span>
+        <span>Agentic AI</span>
+      </div>
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">🏆</span>
+        <span>Top Performer</span>
+      </div>
+      <div class="hero-mobile-badge">
+        <span class="bmb-icon">☁️</span>
+        <span>Azure Certified</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Scroll hint -->
+<div class="hero-scroll-hint">
+  <div class="scroll-mouse"></div>
+  <span>Scroll down</span>
+</div>
+
+<script>
+  // Debug: tells you in console if image loaded or failed
+  document.addEventListener('DOMContentLoaded', function() {
+    var img = document.getElementById('heroPhoto');
+    if (img) {
+      img.addEventListener('load', function() {
+        console.log('%c✅ Photo loaded from: ' + img.src, 'color:green;font-weight:bold');
+      });
+      // Check if already loaded (cached)
+      if (img.complete && img.naturalWidth > 0) {
+        console.log('%c✅ Photo already loaded: ' + img.src, 'color:green;font-weight:bold');
+        img.style.display = 'block';
+        document.getElementById('heroAvatarFallback').style.display = 'none';
+      }
+    }
+  });
+</script>
