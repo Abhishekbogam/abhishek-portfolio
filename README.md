@@ -11,9 +11,12 @@ portfolio/
 │
 ├── index.html                  ← Main entry point
 │
+├── data/
+│   └── certificates.json       ← ✅ Add new certificates HERE (no HTML editing needed)
+│
 ├── css/
 │   ├── global.css              ← Variables, reset, typography, buttons, cards, utilities
-│   ├── nav.css                 ← Navigation bar styles
+│   ├── nav.css                 ← Navigation bar + Resume modal styles
 │   ├── hero.css                ← Hero / landing section styles
 │   ├── about.css               ← About section styles
 │   ├── experience.css          ← Experience / timeline styles
@@ -31,7 +34,8 @@ portfolio/
 │   ├── hero.js                 ← Typed role animation
 │   ├── animations.js           ← Scroll-reveal observer + counter animations
 │   ├── contact.js              ← Contact form handler (opens mailto)
-│   └── main.js                 ← App init, ripple effects, utilities
+│   ├── certificates.js         ← Auto-renders cert cards from data/certificates.json
+│   └── main.js                 ← App init, modals (cert + resume), ripple effects
 │
 ├── sections/
 │   ├── nav.html                ← Navigation HTML partial
@@ -47,19 +51,18 @@ portfolio/
 │   └── footer.html             ← Footer HTML partial
 │
 └── assets/
-    └── images/
-        └── abhishek.jpg        ← ⚠️ ADD YOUR PHOTO HERE
-    └── certificates/
-        └── azure-ai-fundamentals.pdf  ← ⚠️ ADD YOUR CERTIFICATES HERE
-        └── cognizant.pdf
-        └── github-copilot.pdf
-        └── google-genai.pdf
-        └── ltimindtree.pdf
-        └── oracle-genai.pdf
-        └── oracle-vector.pdf
+    ├── images/
+    │   └── abhishek.jpg        ← ⚠️ YOUR PHOTO HERE
+    ├── certificates/
+    │   ├── azure-ai-fundamentals.pdf
+    │   ├── cognizant.pdf
+    │   ├── github-copilot.pdf
+    │   ├── google-genai.pdf
+    │   ├── ltimindtree.pdf
+    │   ├── oracle-genai.pdf
+    │   └── oracle-vector.pdf   ← ⚠️ DROP NEW CERTIFICATE PDFs HERE
     └── resume/
-        └── abhishek-resume.pdf        ← ⚠️ ADD YOUR RESUME HERE
-
+        └── abhishek-resume.pdf ← ⚠️ YOUR RESUME HERE
 ```
 
 ---
@@ -84,7 +87,35 @@ cd portfolio
 npx serve .
 ```
 
-> ⚠️ The site uses `fetch()` to load section partials, so it **must be served over HTTP** (not opened directly as a file:// URL).
+> ⚠️ The site uses `fetch()` to load section partials and `data/certificates.json`, so it **must be served over HTTP** (not opened directly as a `file://` URL).
+
+---
+
+## 🏅 Adding a New Certificate
+
+No HTML editing required. Just 3 steps:
+
+**Step 1** — Drop the PDF into `assets/certificates/`
+
+**Step 2** — Open `data/certificates.json` and add one entry:
+
+```json
+{
+  "title": "Your Certificate Name",
+  "issuer": "Issuer Company",
+  "icon": "🏆",
+  "file": "assets/certificates/your-cert-file.pdf"
+}
+```
+
+**Step 3** — Push to GitHub:
+```bash
+git add .
+git commit -m "add: new certificate"
+git push
+```
+
+The card will automatically appear on the site. ✅
 
 ---
 
@@ -96,14 +127,40 @@ npx serve .
 
 **Recommended photo specs:**
 - Square format (e.g. 400×400px or 600×600px)
-- Professional headshot or good quality photo
+- Professional headshot
 - JPEG or PNG format
+
+---
+
+## 📄 Resume
+
+- Place your resume PDF at: `assets/resume/abhishek-resume.pdf`
+- The **Resume** button in the navbar opens a modal viewer
+- The **Download** button in the modal downloads it directly without leaving the page
+
+---
+
+## 🚢 Deploying to GitHub Pages
+
+```bash
+git init
+git remote add origin https://github.com/Abhishekbogam/abhishek-portfolio.git
+git pull origin main --allow-unrelated-histories
+git add .
+git commit -m "update portfolio"
+git push -u origin main
+```
+
+Live at: **https://abhishekbogam.github.io/abhishek-portfolio/**
+
+> GitHub Pages takes 1–2 minutes to reflect changes after each push.
 
 ---
 
 ## 🎨 Customization
 
 - **Colors:** Edit CSS variables in `css/global.css` under `:root {}`
+- **Certificates:** Edit `data/certificates.json` — no HTML needed
 - **Content:** Edit the HTML files in `sections/`
 - **Animations:** Adjust timing in `js/animations.js`
 - **Fonts:** Change Google Fonts import in `index.html` + update `--font-*` variables
@@ -114,11 +171,13 @@ npx serve .
 
 - ✅ Light blue professional color scheme with gradient buttons
 - ✅ Circular photo frame with floating badges in hero
-- ✅ "Hi, I am Bogam Abhishek" hero greeting
 - ✅ Typed role animation (cycles through roles)
 - ✅ Scroll-reveal animations on all sections
 - ✅ Counter animations for stats
 - ✅ Responsive / mobile-friendly
+- ✅ Resume modal with in-page viewer + direct download
+- ✅ Certificate modal viewer (no download — view only)
+- ✅ JSON-driven certificate cards (add certs without touching HTML)
 - ✅ Custom smooth scrollbar
 - ✅ Ripple effect on buttons
 - ✅ Working contact form (opens email client)
